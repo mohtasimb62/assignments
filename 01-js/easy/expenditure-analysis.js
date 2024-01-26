@@ -6,7 +6,15 @@
 */
 
 function calculateTotalSpentByCategory(transactions) {
-  return [];
+  result = [];
+
+  categoryObj = {};
+
+  for(transaction in transactions) {
+    categoryObj
+  }
+
+  return result;
 }
 
 module.exports = calculateTotalSpentByCategory;
