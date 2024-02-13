@@ -5,6 +5,23 @@
  */
 
 function sleep(milliseconds) {
+    let p = new Promise(function(resolve){
+        let d = Date.now()
+        let now = d
+
+        while (now - d < milliseconds){
+            now = Date.now()
+        }
+        resolve()
+
+    })
+
+    return p
 }
+
+ans = sleep(5*1000)
+ans.then(function(){
+    console.log("HI")
+})
 
 module.exports = sleep;
